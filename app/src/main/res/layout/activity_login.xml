@@ -122,6 +122,13 @@
             app:strokeColor="@color/black"
             android:textColor="@color/black"
             android:text="Sign Up" />
+
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/googleSignInBtn"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:buttonSize="wide"/>
     </LinearLayout>
 
     <ImageView
