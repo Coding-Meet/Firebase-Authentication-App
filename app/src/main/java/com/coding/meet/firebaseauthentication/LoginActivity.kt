@@ -8,6 +8,7 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.widget.Button
 import android.widget.LinearLayout
+import android.widget.TextView
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
@@ -110,6 +111,13 @@ class LoginActivity : AppCompatActivity() {
                 longToastShow("No Internet Connection!")
             }
         }
+
+
+        val forgotPasswordTxt = findViewById<TextView>(R.id.forgotPasswordTxt)
+        forgotPasswordTxt.setOnClickListener {
+            startActivity(Intent(this,ForgotPasswordActivity::class.java))
+        }
+
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

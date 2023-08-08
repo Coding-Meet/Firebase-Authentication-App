@@ -84,12 +84,23 @@
         </com.google.android.material.textfield.TextInputLayout>
 
 
+        <TextView
+            android:id="@+id/forgotPasswordTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:text="@string/forgot_password"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="end"
+            android:textColor="@color/black"/>
+
         <Button
             android:id="@+id/signInBtn"
             style="@style/FillButton"
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"
-            android:layout_marginVertical="10dp"
+            android:layout_marginTop="10dp"
             android:backgroundTint="@color/black"
             android:text="Sign In" />
     </LinearLayout>

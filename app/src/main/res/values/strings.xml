@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Firebase Authentication</string>
+
+    <string name="forgot_password"><u>Forgot Password</u></string>
 </resources>
