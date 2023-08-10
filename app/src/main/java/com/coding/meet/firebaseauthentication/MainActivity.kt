@@ -20,12 +20,31 @@ class MainActivity : AppCompatActivity() {
             val email = currentUser.email
             val userName = currentUser.displayName
             displayTxt.text = "Email=${email}\nUserName=${userName}"
+
+
+            val deleteAccountBtn = findViewById<Button>(R.id.deleteAccountBtn)
+            deleteAccountBtn.setOnClickListener {
+                currentUser.delete()
+                    .addOnSuccessListener {
+                        longToastShow("Delete Account Successful")
+                        val mainIntent = Intent(this,LoginActivity::class.java)
+                        mainIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+                        mainIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                        startActivity(mainIntent)
+                        finish()
+                    }
+                    .addOnFailureListener {
+                        it.printStackTrace()
+                        it.message?.let { it1 -> longToastShow(it1) }
+                    }
+            }
         }
 
         val logoutBtn = findViewById<Button>(R.id.logoutBtn)
         logoutBtn.setOnClickListener {
             // Logout User
             FirebaseAuth.getInstance().signOut()
+            longToastShow("Logout Successful")
             val mainIntent = Intent(this,LoginActivity::class.java)
             mainIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
             mainIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
