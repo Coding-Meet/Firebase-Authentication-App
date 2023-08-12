@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#3FF072"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -15,8 +16,8 @@
 
         <ImageView
             android:id="@+id/profileImg"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:src="@drawable/logo"/>
 
 
@@ -32,6 +33,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edName"
                 android:layout_width="match_parent"
+                android:backgroundTint="@color/white"
                 android:layout_height="?actionBarSize"
                 android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -56,6 +58,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edOriginalEmail"
                 android:layout_width="match_parent"
+                android:backgroundTint="@color/white"
                 android:layout_height="?actionBarSize"
                 android:inputType="textEmailAddress" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -73,6 +76,7 @@
                 android:id="@+id/edNewEmail"
                 android:layout_width="match_parent"
                 android:layout_height="?actionBarSize"
+                android:backgroundTint="@color/white"
                 android:inputType="textEmailAddress" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -90,6 +94,7 @@
                 android:id="@+id/edOriginalPassword"
                 android:layout_width="match_parent"
                 android:layout_height="?actionBarSize"
+                android:backgroundTint="@color/white"
                 android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -98,7 +103,7 @@
             style="@style/Widget.App.TextInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="4dp"
+            android:layout_marginTop="4dp"
             android:hint="Enter New Password"
             app:endIconMode="password_toggle"
             app:startIconDrawable="@drawable/ic_lock_24">
@@ -107,6 +112,7 @@
                 android:id="@+id/edNewPassword"
                 android:layout_width="match_parent"
                 android:layout_height="?actionBarSize"
+                android:backgroundTint="@color/white"
                 android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
 
