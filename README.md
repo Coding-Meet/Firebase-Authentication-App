@@ -1,6 +1,8 @@
 # Firebase-Authentication-App
 Firebase Authentication in Android Studio Kotlin
 
+# [YouTube Video Link](https://youtube.com/playlist?list=PLlSuJy9SfzvFNtX4C8FPLzfMcokmF1kV_)
+
 ![Firebase Authentication App](screenshot/img1.png)
 <hr />
 
